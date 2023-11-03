@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <a href="#" class="logo"><img class="logo_img" src="images/logo.webp" alt="logo"></a>
+                <div class="login">
+                    <form class="login_form">
+                        <div class="login_item">
+                            <input class="email login_req" type="email" name="email" placeholder="Email">
+                            <div class="help">Please enter a valid email address</div>
+                        </div>
+                        <div class="login_item">
+                            <input class="password login_req" type="password" name="password" placeholder="Password">
+                            <a href="#" class="help">Forgot your password?</a>
+                        </div>
+                        <input class="submit" type="submit" value="Log in">
+                    </form>
+                    <div class="login_btn" onclick="openLoginForm()">Log in</div>
+                </div>
+            </div>
+            <div class="intro">
+                <h1 class="intro_title"> 
+                    <p>STARCOMPANY DESIGNS, MANUFACTURES AND</p>
+                    <p>Launches Advanced Rockets and &nbsp Spacecrafts</p>
+                </h1>
+                <form class="form_slider">
+                    <div class="previous slider_btn" onclick="previousSlide()"><span></span></div>
+                    <div class="slider_container">
+                        <div class="slider_wrapper">
+                            <div class="slider_item">
+                                <p class="slide_title">Who are you?</p>
+                                <div class="select_container">
+                                    <div class="select select_profession" tabindex="1">
+                                        <input class="selectopt" name="gender" type="radio" id="profession1" checked>
+                                        <label for="profession1" class="option"><p>Engineer</p></label>
+                                        <input class="selectopt" name="gender" type="radio" id="profession2">
+                                        <label for="profession2" class="option"><p>Business Development Executive</p></label>
+                                        <input class="selectopt" name="gender" type="radio" id="profession3">
+                                        <label for="profession3" class="option"><p>Office Manager/PA</p></label>
+                                        <input class="selectopt" name="gender" type="radio" id="profession4">
+                                        <label for="profession4" class="option"><p>Accountant</p></label>
+                                        <input class="selectopt" name="gender" type="radio" id="profession5">
+                                        <label for="profession5" class="option"><p>VR Designer</p></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider_item">
+                                <p class="slide_title">What is your age?</p>
+                                <div class="select_container">
+                                    <div class="select select_age" tabindex="1">
+                                        <input class="selectopt" name="age" type="radio" id="age1" checked>
+                                        <label for="age1" class="option"><p>18</p></label>
+                                        <input class="selectopt" name="age" type="radio" id="age2">
+                                        <label for="age2" class="option"><p>19</p></label>
+                                        <input class="selectopt" name="age" type="radio" id="age3">
+                                        <label for="age3" class="option"><p>20</p></label>
+                                        <input class="selectopt" name="age" type="radio" id="age4">
+                                        <label for="age4" class="option"><p>21</p></label>
+                                        <input class="selectopt" name="age" type="radio" id="age5">
+                                        <label for="age5" class="option"><p>22</p></label>
+                                        <input class="selectopt" name="age" type="radio" id="age6">
+                                        <label for="age6" class="option"><p>23</p></label>
+                                        <input class="selectopt" name="age" type="radio" id="age7">
+                                        <label for="age7" class="option"><p>24</p></label>
+                                        <input class="selectopt" name="age" type="radio" id="age8">
+                                        <label for="age8" class="option"><p>25</p></label>
+                                        <input class="selectopt" name="age" type="radio" id="age9">
+                                        <label for="age9" class="option"><p>26</p></label>
+                                        <input class="selectopt" name="age" type="radio" id="age10">
+                                        <label for="age10" class="option"><p>27</p></label>
+                                        <input class="selectopt" name="age" type="radio" id="age11">
+                                        <label for="age11" class="option"><p>28</p></label>
+                                        <input class="selectopt" name="age" type="radio" id="age12">
+                                        <label for="age12" class="option"><p>29</p></label>
+                                        <input class="selectopt" name="age" type="radio" id="age13">
+                                        <label for="age13" class="option"><p>30</p></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider_item">
+                                <p class="slide_title">I am from</p>
+                                <input class="location registration_req" type="text" name="location" placeholder="New Road, 70760">
+                                <p class="description">E.g.: New Roads or 70760 <br> We don’t use postal addresses to contact members directly!</p>
+                                <div class="help description location-help"></div>
+                            </div>
+                            <div class="slider_item">
+                                <p class="slide_title">Your email adress</p>
+                                <input class="email slider_email registration_req" type="email" name="email" placeholder="Input your email">
+                                <div class="help description email-help"></div>
+                            </div>
+                            <div class="slider_item">
+                                <p class="slide_title">Create your password</p>
+                                <input class="password slider_password registration_req" type="password" name="password" placeholder="•••••••••••••••">
+                                <p class="description">By clicking the button above you agree to our <a href="#">Terms of Use <br>
+                                    and Privacy Policy</a> including use of cookies and to receive newsletters, <br>
+                                    account updates and offers sent by StarCompany.</p>
+                                <div class="help description password-help"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next slider_btn" onclick="nextSlide()"><p>Next step</p><span></span></div>
+                    <div class="submit_slider slider_btn" onclick="submitForm()"><p>Start now</p><span></span></div>
+                </form>
+                <div class="circles">
+                    <div class="circle active"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
